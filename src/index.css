@@ -270,13 +270,19 @@ ul {
   border-top-right-radius: var(--borderRadius);
   border-bottom-right-radius: var(--borderRadius);
   letter-spacing: 2px;
+  transition-duration: 0s;
 }
-.container input {
+input[type='text'] {
   border-color: transparent;
   padding: 0.5rem 1rem;
   font-size: 1.2rem;
   border-top-left-radius: var(--borderRadius);
   border-bottom-left-radius: var(--borderRadius);
+}
+input[type='color'] {
+  height: 42px;
+  background-color: var(--white);
+  border-color: var(--white);
 }
 
 @media screen and (min-width: 768px) {
@@ -310,3 +316,5 @@ ul {
 .color-light .percent-value {
   color: var(--white);
 }
+
+/* input[type="color"] */
